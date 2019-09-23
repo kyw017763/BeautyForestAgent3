@@ -44,10 +44,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(10, 264);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.Location = new System.Drawing.Point(0, 295);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(464, 46);
+            this.button1.Size = new System.Drawing.Size(485, 46);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,7 +58,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 319);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 273);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(485, 22);
             this.statusStrip1.SizingGrip = false;
@@ -86,9 +87,10 @@
             this.rtbText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtbText.Location = new System.Drawing.Point(0, 25);
             this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(485, 294);
+            this.rtbText.Size = new System.Drawing.Size(485, 248);
             this.rtbText.TabIndex = 3;
             this.rtbText.Text = resources.GetString("rtbText.Text");
+            this.rtbText.TextChanged += new System.EventHandler(this.RtbText_TextChanged);
             // 
             // tsbtnFont
             // 
@@ -98,6 +100,7 @@
             this.tsbtnFont.Name = "tsbtnFont";
             this.tsbtnFont.Size = new System.Drawing.Size(23, 22);
             this.tsbtnFont.Text = "toolStripButton1";
+            this.tsbtnFont.Click += new System.EventHandler(this.TsbtnFont_Click);
             // 
             // tsbtnColor
             // 
@@ -107,6 +110,7 @@
             this.tsbtnColor.Name = "tsbtnColor";
             this.tsbtnColor.Size = new System.Drawing.Size(23, 22);
             this.tsbtnColor.Text = "toolStripButton2";
+            this.tsbtnColor.Click += new System.EventHandler(this.TsbtnColor_Click);
             // 
             // FormOpinion
             // 
